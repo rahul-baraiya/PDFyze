@@ -10,7 +10,7 @@ document
       document.getElementById("loader").classList.add("active");
 
       fetch(
-        "http://ec2-13-127-253-113.ap-south-1.compute.amazonaws.com:5000/office-to-pdf",
+        "https://pdfyze.onrender.com/office-to-pdf",
         {
           method: "POST",
           body: formData,
@@ -38,7 +38,7 @@ document
           // Create a link element
           const link = document.createElement("a");
           link.href = url;
-          link.download = "PDFify_converted.pdf"; // Name of the downloaded file
+          link.download = "PDFyze_converted.pdf"; // Name of the downloaded file
           document.body.appendChild(link); // Append link to body (required in Firefox)
           link.click();
 
